@@ -1,12 +1,10 @@
 # Book recommendation system
  The book recommendation system must recommend books that are of interest to buyers. The main objective of this project  is to create a Book recommendation system that best predicts user interests and recommend the suitable/appropriate books to them ,using various approaches.The approaches used here are:
 
-<h1 align="center">  Book recommendation system
- </h1>
 
+![image](https://user-images.githubusercontent.com/114326008/227332816-b015597d-7970-4a8f-9473-34feb3edca10.png)
 <p align="center"> 
-<img src="https://assets.website-files.com/6141c89a3874c3702674a1c0/62b1a359a17ffc3c6aaf2d3a_memgraph-building-real-time-book-recommendations-for-bookworms-release-blog-cover.png" height="400px">
-</p>
+
 
 
 <p> </p>
