@@ -18,7 +18,7 @@
   * [Problem Statement](#Problem-Statement)
   * [Dataset Information](#dataset-information)
   * [Tools and Technologies used](#tools-and-technologies-used)
-  * [Project Description](#Project Description)
+  * [Project Description](#Project-Description)
   * [Conclusion](#Conclusion)
 
 
