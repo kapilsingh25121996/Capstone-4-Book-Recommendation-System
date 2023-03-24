@@ -84,7 +84,6 @@ The programming language used in this project is Python . The following librarie
 * **Matplotlib**: For  data visualization.
 * **Seaborn**: For data visualization.
 * **NumPy**: For some math operations in predictions.
-* **Statsmodels**: For statistical computations
 * **Sklearn**:  For the purpose of analysis,prediction and evaluation.
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
