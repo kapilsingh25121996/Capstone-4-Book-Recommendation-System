@@ -18,8 +18,7 @@
   * [Problem Statement](#Problem-Statement)
   * [Dataset Information](#dataset-information)
   * [Tools and Technologies used](#tools-and-technologies-used)
-  * [Steps involved](#Steps-involved)
-  * [Approaches used](#Approaches-used)
+  * [Project Description](#Project Description)
   * [Conclusion](#Conclusion)
 
 
@@ -37,8 +36,9 @@ With an increasing amount of information on the internet and a considerable incr
 
 <h2> ❓ Problem Statement</h2>
 
- In some industries, the use of recommender systems is crucial because, when implemented well, they can be extremely profitable and set themselves apart from their competitors. Online book selling websites nowadays are competing with each other by many means.One of the most effective strategies for increasing sales,enhancing customer experience and retaining customers is building an efficient Recommendation system. The book recommendation system must recommend books that are of interest to buyers. Popularity based approach and Collaborative filtering approach are used in this project to build book recommendation systems.
-
+ During the last few decades, with the rise of Youtube, Amazon, Netflix, and many other such web services, recommender systems have taken more and more place in our lives. From e-commerce (suggest to buyers articles that could interest them) to online advertisement (suggest to users the right contents, matching their preferences), recommender systems are today unavoidable in our daily online journeys.
+In a very general way, recommender systems are algorithms aimed at suggesting relevant items to users (items being movies to watch, text to read, products to buy, or anything else depending on industries).
+Recommender systems are really critical in some industries as they can generate a huge amount of income when they are efficient or also be a way to stand out significantly from competitors. The main objective is to create a book recommendation system for users.
 
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
@@ -88,52 +88,26 @@ The programming language used in this project is Python . The following librarie
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
-<h2> 📑 Steps involved </h2>
+<h2> 📑 Project Description </h2>
 
-* **Data Preprocessing** : Checked for outliers, incorrect values, missing values, duplicate, performed data type correction and string formatting.
-* **Merging of datasets** : In this project, recommender systems were built utilizing only explicit ratings . So finally,a new dataframe by merging the books dataset ,explicit ratings dataset and users dataset.
-* **Feature Extraction** : Created new columns such as age_group by binning the 'Age' column and extracted the country name from the 'Location' column  .
-* **Exploratory Data Analysis** : Performed Univariate, Bivariate, and Multivariate analysis with various graphs and plots to better understand the distribution of features and their relationships.
-* **Implementation of various Recommender System approaches** 
+* **Data Cleaning** : Missing value imputation,Outlier Treaatment.
+* **Feature Selection** : Used User-ID,ISBN and Books-Rating for model development.
+* **Model development** :  Tried Popularity based model and Collaborative filtering (Both Memory based and Model based).
+* **Exploratory Data Analysis** : Performed exploratory data analysis on numerical and categorical data.
 
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 
-<h2>💻 Approaches used</h2>
-
-The approaches used in this project are:
-
- 1. Popularity Based recommendation system
-
- It is a type of recommendation system that bases choices on factors like popularity and/or current trends. These systems determine which item (in this case,books) are in the trending list or are the most well-liked by users and then directly recommend them.
-
-   - Weighted average rating approach
-   - Country-wise approach
-   - Author-wise approach
-
- 2. Collaborative Filitering Based recommendation system
-   - Memory Based approach - KNN
-   - Model Based approach- SVD based recommendationsystem 
-
- The Collaborative Filtering approach first investigates the user’s behaviors, interests, and searches for similar users.  It recommends items to users based on the ratings of similar users on various items and by predicting the missing ratings of the items . CF is broadly classified as memory-based and model-based CF.
-
-
-   - Memory Based approach - KNN (similarity between items)
-   - Model Based approach- SVD based recommendation system (prediction of ratings)
 
 <h2> :bulb: Conclusion</h2>
 
-* The Lovely Bones: A Novel and Wild Animus are the two most read books.
-* Stephen King is the most popular book author based on the number of ratings.
-* Ballantine Books and Pocket are the top publishers based on the number of ratings that their books have received.
-* The majority of readers are between the ages of 25 and 40.
-* The majority of readers who have given the books ratings are from the United States and Canada.
-* Regardless of the age group, The Lovely Bones and Wild Animus appear on lists of the top-rated books.
-* We have built five types of recommendation systems and did evaluation for one of them.
-* In the case of Memory-based approach, the Cosine similarity-based KNN performs better at recommending books that are similar than the Euclidean distance-based KNN.
-* After evaluation for Collaborative-Model Based Recommendation system, we got a recall@5 of 30% and recall@10 of 41%.
-
+* In EDA, the Top-10 most rated books were essentially novels. Books like The Lovely Bone and The Secret Life of Bees were very well perceived.
+* Majority of the readers were of the age bracket 20-35 and most of them came from North American and European countries namely USA, Canada, UK, Germany and Spain.
+* If we look at the ratings distribution, most of the books have high ratings with maximum books being rated 8. Ratings below 5 are few in number.
+* Author with the most books was Agatha Christie, William Shakespeare and Stephen King.
+* For modelling, it was observed that for model based collaborative filtering SVD technique worked way better than NMF with lower Mean Absolute Error (MAE).
+* Amongst the memory based approach, item-item CF performed better than user-user CF because of lower computation .
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
